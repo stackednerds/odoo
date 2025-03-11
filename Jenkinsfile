@@ -11,6 +11,14 @@ pipeline {
         SCANNER_HOME=tool 'sonar-scanner' 
     }
     stages {
+        stage("test") {
+            steps {
+                script {
+                    echo "test"
+                }
+            }
+
+        }
         stage("Sonarqube Analysis") {
             steps {
                 script {
