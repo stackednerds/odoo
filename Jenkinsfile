@@ -8,8 +8,8 @@ pipeline {
             steps {
                 script {
                     withSonarQubeEnv('sonar-scanner') {
-                        sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=devops \
-                    -Dsonar.projectKey=devops '''
+                        sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=odoo \
+                    -Dsonar.projectKey=odoo '''
                     }
                 }
             }
